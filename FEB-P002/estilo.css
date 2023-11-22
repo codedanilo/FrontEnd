@@ -1,106 +1,190 @@
-/* Design para telas com tamanho maior que 500px */ 
-@media screen and (min-width: 500px) { body { margin: 0; padding: 0; font-family: Arial, sans-serif; }
-header {
-        background-color: #333;
-        color: white;
-        padding: 20px;
-        text-align: center;
-    }
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Cabeçalho */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
 
-    main {
-        padding: 20px;
-    }
-
-    .titulo-menu {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        margin-bottom: 20px;
-    }
-
-    .titulo-menu a {
-        color: #333;
-        text-decoration: none;
-    }
-
-    .titulo-menu a:hover {
-        color: #999;
-    }
-
-    footer {
-        background-color: #333;
-        color: white;
-        padding: 20px;
-        text-align: center;
-    }
+  /* Cabeçalho com imagem de fundo */
+.header-with-background {
+  background-image: url('img/uesc.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff; /* Cor do texto para melhor legibilidade na imagem de fundo */
+  text-align: center;
+  padding: 70px 0; /* Ajuste o preenchimento superior e inferior conforme necessário */
+  height: none;
 }
 
-/* Design para telas com tamanho menor ou igual a 500px */
-@media screen and (max-width: 500px) {
-    body {
-        margin: 0;
-        padding: 0;
-        font-family: Arial, sans-serif;
-    }
+.header-with-background h1 {
+  margin: 0;
+  font-size: 2em;
+}
+  
+  /* Rodapé */
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  /* Seção principal */
+  .content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  /* Caixas na seção principal */
+  .box {
+    flex-basis: 30%;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-right: 5px;
+  }
 
-    header {
-        background-color: #333;
-        color: white;
-        padding: 20px;
-        text-align: center;
-    }
+  .box2 {
+    display: flex;
+    flex-basis: 63%;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-bottom: 5px;
+    
+  }
+  
+  .vertical {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sub-box {
+    flex-basis: 50%;
+    background-color: #e0e0e0;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  /* Seção adicional */
+  .additional {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
 
-    main {
-        padding: 20px;
-    }
-
-    .titulo-menu {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 20px;
-    }
-
-    .titulo-menu a {
-        color: #333;
-        text-decoration: none;
-    }
-
-    .titulo-menu a:hover {
-        color: #999;
-    }
-
-    footer {
-        background-color: #333;
-        color: white;
-        padding: 20px;
-        text-align: center;
-    }
+  /* Menu */
+.menu ul {
+  list-style: none;
+  padding: 0;
 }
 
-
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 480px) {
- /* CSS styles for smartphones go here */
+.menu ul li {
+  margin-bottom: 10px;
 }
 
-/* Tablets (portrait and landscape) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) {
- /* CSS styles for tablets go here */
+.menu ul li a {
+  text-align: -webkit-match-parent;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  display: list-item;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
-/* Desktops and laptops ----------- */
-@media only screen 
-and (min-width : 1224px) {
- /* CSS styles for desktops go here */
+/* Efeito ao passar o mouse */
+.menu ul li a:hover {
+  background-color: #f2f2f2;
+  color: #000;
 }
 
-/* Large screens ----------- */
-@media only screen 
-and (min-width : 1824px) {
- /* CSS styles for large screens go here */
+a {
+  color: #6699CC;
+  text-decoration: none;
+  font-size: 14px;
 }
+
+.carrossel {
+  display: flex;
+  overflow: hidden;
+  width: 500px;
+}
+
+.carrossel img {
+  width: 100%;
+  height: 300px;
+  display: block;
+}
+
+.carrossel2 {
+  display: flex;
+  overflow: hidden;
+  width: 490px;
+}
+
+.carrossel2 img {
+  width: 100%;
+  height: 300px;
+  display: block;
+}
+.controls button {
+  padding: 8px 16px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+  
+  /* Estilos responsivos para telas menores que 500px */
+  @media screen and (max-width: 500px) {
+    .content {
+      flex-direction: column;
+    }
+  
+    .box {
+      flex-basis: 100%;
+    }
+
+    .box2{
+      flex-basis: 100%;
+    }
+  
+    .vertical {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .sub-box {
+      flex-basis: 50%;
+      background-color: #e0e0e0;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+  
+    .additional {
+      flex-direction: column;
+    }
+    .menu ul li {
+      margin-bottom: 8px;
+      text-align: center;
+    }
+  
+    .menu ul li a {
+      display: block;
+      padding: 10px;
+      background-color: #f2f2f2;
+      border-radius: 5px;
+    }
+  }
+  
