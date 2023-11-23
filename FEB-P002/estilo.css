@@ -253,7 +253,7 @@ a {
     }
     .header-with-background {
       display: flex;
-      background-image: url('./img/uesc_mobile.png');
+      background-image: url('img/uesc_mobile.png');
       background-size: cover;
       background-position:center;
       color: #fff; /* Cor do texto para melhor legibilidade na imagem de fundo */
