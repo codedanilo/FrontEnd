@@ -57,11 +57,13 @@ body {
   }
 
   .box2 {
-    display: flex;
+  
     flex-basis: 63%;
     background-color: #f2f2f2;
     padding: 20px;
     margin-bottom: 5px;
+    flex-direction: row;
+    justify-content: left;
     
   }
   
