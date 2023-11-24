@@ -24,7 +24,7 @@
 
 /* Estilos gerais */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif, verdana;
     margin: 0;
     padding: 0;
   }
@@ -153,7 +153,7 @@ a {
 }
 
 .carrossel2 {
-  display: flex;
+  display: grid;
   overflow: hidden;
   width: 500px;
   
@@ -173,13 +173,22 @@ a {
   /* Estilos responsivos para telas menores que 500px */
   @media screen and (max-width: 500px) {
     .container {
+      display: inline-block;
       flex-direction: column;
      
     }
 
     .container2 {
+      display: inline-block;
       flex-direction: column;
       
+    }
+
+    .menu{
+      display: grid;
+      flex-direction: column;
+      justify-content: space-between;
+      flex-basis: 100%;
     }
   
     .box {
@@ -194,6 +203,7 @@ a {
       align-items: center;
     }
     .box-vertical{
+      display: inline-block;
       flex-direction: column;
       align-items: center;
       
@@ -228,7 +238,7 @@ a {
     }
 
     .carrossel2 {
-      display: flex;
+      display: grid;
       overflow: hidden;
       width: 500px;
      
@@ -243,8 +253,9 @@ a {
       
     .carrossel2 img {
       width: 70%;
-      height: 220px;
+      height: 200px;
       flex-direction: column;
+      background-color: none;
     }
 
     .line {
@@ -254,7 +265,7 @@ a {
       margin: 5px 0;
     }
     .header-with-background {
-      display: flex;
+      display: grid;
       background-image: url('img/uesc_mobile.png');
       background-size: cover;
       background-position:center;
