@@ -1,6 +1,6 @@
 /* Seção principal */
 .container {
-  display: flex;
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: space-between;
   padding: 20px;
@@ -8,14 +8,14 @@
 
 /* Seção Secudária */
 .container2 {
-  display: flex;
+  display: grid;
   justify-content: space-between;
   padding: 20px;
   margin-top: -30px;
 }
 
 .menu{
-  display: flex;
+  display: grid;
   flex-direction: column;
   justify-content: space-between;
   margin: 5px;
@@ -44,7 +44,7 @@ body {
 
   /* Cabeçalho com imagem de fundo */
 .header-with-background {
-  display: flex;
+  display: grid;
   align-items: center;
   background-image: url('img/uesc.jpg');
   background-size: cover;
@@ -72,6 +72,7 @@ body {
   
   /* Caixas na seção principal */
   .box {
+    display: inline-block;
     flex-basis: 30%;
     background-color: #f2f2f2;
     padding: 20px;
@@ -80,7 +81,7 @@ body {
   }
 
   .box2 {
-  
+    display: inline-block;
     flex-basis: 63%;
     background-color: #f2f2f2;
     padding: 20px;
@@ -91,7 +92,7 @@ body {
   }
   
   .vertical {
-    display: flex;
+    display: grid;
     flex-direction: column;
   }
   
@@ -104,6 +105,7 @@ body {
   
   /* Menu */
 .menu ul {
+  display: inline-block;
   list-style: none;
   padding: 0;
 }
@@ -139,7 +141,7 @@ a {
 }
 
 .carrossel {
-  display: flex;
+  display: grid;
   overflow: hidden;
   width: 500px;
 }
