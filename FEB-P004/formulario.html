@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <title>Roteiros Turísticos - Formulário</title>
+    <link rel="stylesheet" href="formulario.css">
+    <!-- Seus links para CSS e outras meta informações -->
+</head>
+<body>
+    <!-- Seção de formulário -->
+    <h2>Novo Pacote Turístico</h2>
+    <form id="novoPacote">
+        <label for="nomeDestino">Destino:</label>
+        <input type="text" id="nomeDestino" required><br><br>
+
+        <label for="urlImagem">URL da Imagem:</label>
+        <input type="text" id="urlImagem" required><br><br>
+
+        <label for="itensInclusos">Itens Inclusos:</label>
+        <textarea id="itensInclusos" required></textarea><br><br>
+
+        <label for="preco">Preço:</label>
+        <input type="text" id="preco" required><br><br>
+
+        <label for="observacoes">Observações:</label>
+        <textarea id="observacoes" required></textarea><br><br>
+
+        <label for="parcelamento">Parcelamento:</label>
+        <input type="text" id="parcelamento" required><br><br>
+
+        <button type="submit">Inserir</button>
+    </form>
+
+    <hr/>
+
+    <!-- Lista de pacotes turísticos -->
+    <div class="container-destinos">
+        <!-- Seu conteúdo atual de roteiros-viagens -->
+    </div>
+
+    <!-- Seu script para manipulação do DOM -->
+    <script src="script2.js"></script>
+</body>
+</html>
