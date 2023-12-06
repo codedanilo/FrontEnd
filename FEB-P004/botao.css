@@ -29,5 +29,4 @@
 * Efeito ao clicar */
 .roteiro-comprar:active {
   transform: scale(0.95); /* Reduz o tamanho ao clicar */
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Sombra */
 }
