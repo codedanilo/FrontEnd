@@ -22,7 +22,7 @@
 {
   background-color: rgb(14, 186, 216);
   border-color: rgb(255, 255, 255);
-  box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3); /* Sombra */
+  box-shadow: 0px 12px 8px gray; /* Sombra */
   color: black;
 }
 
