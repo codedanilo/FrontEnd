@@ -1,0 +1,163 @@
+/* Seção principal */
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/* Seção Secudária */
+.container2 {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin-top: -30px;
+}
+
+.menu {
+  display: grid;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 5px;
+  flex-basis: 30%;
+}
+
+/* Caixas na seção principal */
+.box {
+  flex-basis: calc(33% - 10px); /* Usando calc para levar em consideração o espaço entre os elementos */
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-right: 5px;
+}
+
+#quadro-resultados {
+  flex-basis: calc(67% - 10px); /* Usando calc para levar em consideração o espaço entre os elementos */
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-bottom: 5px;
+}
+
+.sub-box {
+  flex-basis: 50%;
+  background-color: #e0e0e0;
+}
+
+/* Estilos gerais */
+body {
+  font-family: Poppins, sans-serif, verdana;
+  margin: 0;
+  padding: 0;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+/* Cabeçalho com imagem de fundo */
+.header-with-background {
+display: grid;
+align-items: center;
+background-image: url('img/uesc.jpg');
+background-size: cover;
+background-position: center;
+color: #fff; /* Cor do texto para melhor legibilidade na imagem de fundo */
+padding: 90px 0; /* Ajuste o preenchimento superior e inferior conforme necessário */
+height: 60px;
+}
+
+.header-with-background h1 {
+margin: 0;
+font-size: 2em;
+}
+
+/* Menu */
+.menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu ul li {
+  margin-bottom: 5px;
+  text-align: left;
+  display: list-item;
+  justify-content: last baseline;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+/* Efeito ao passar o mouse */
+.menu ul li a:hover {
+  background-color: #f2f2f2;
+  color: #000;
+}
+
+ /* Rodapé */
+ footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Estilos responsivos para telas menores que 500px */
+@media screen and (max-width: 500px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .container2 {
+    flex-direction: column;
+  }
+
+  .box {
+    flex-basis: 100%;
+    align-items: center;
+    margin-right: 0;
+  }
+
+  #quadro-resultados {
+    flex-basis: 100%;
+  }
+
+  .menu ul li {
+    margin-bottom: 8px;
+    text-align: center;
+  }
+
+  .menu ul li a {
+    display: block;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+  }
+
+  .header-with-background {
+    display: grid;
+    background-image: url('img/uesc_mobile.png');
+    background-size: cover;
+    background-position:center;
+    color: #fff; /* Cor do texto para melhor legibilidade na imagem de fundo */
+    padding: 60px 0; /* Ajuste o preenchimento superior e inferior conforme necessário */
+    height: 60px;
+    width: 395px;
+  }
+}

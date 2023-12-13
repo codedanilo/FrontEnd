@@ -1,0 +1,59 @@
+/* Menu Hamburguer */
+.menu-mobile {
+    display: none; /* Para esconder o menu em telas maiores */
+  }
+  
+  /* Estilo do ícone do menu */
+  .menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+  /* Estilo da lista de itens do menu */
+  .menu-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: -250px; /* Esconde o menu lateral */
+    background-color: #333;
+    height: 100%;
+    width: 250px;
+    transition: left 0.3s ease;
+  }
+  
+  .menu-list li {
+    padding: 10px;
+    border-bottom: 1px solid #555;
+  }
+  
+  .menu-list li:last-child {
+    border-bottom: none;
+  }
+  
+  .menu-list a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Estilos para telas maiores */
+.menu {
+    display: block;
+  }
+  
+  .menu-mobile {
+    display: none; /* Esconde o menu hamburguer em telas maiores */
+  }
+  
+  /* Estilos responsivos para telas menores que 500px */
+  @media screen and (max-width: 500px) {
+    .menu {
+      display: none; /* Esconde o menu convencional em telas menores */
+    }
+  
+    .menu-mobile {
+      display: block; /* Mostra o menu hamburguer em telas menores */
+    }
+  }
+  
