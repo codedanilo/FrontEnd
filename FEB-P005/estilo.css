@@ -160,4 +160,24 @@ font-size: 2em;
     height: 60px;
     width: 395px;
   }
+  /* Estilos específicos para a box-vertical */
+.box-vertical {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box-vertical .carrossel,
+.box-vertical .carrossel2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box-vertical .carrossel img,
+.box-vertical .carrossel2 img {
+  max-width: 100%; /* Garante que a largura da imagem não exceda a largura do contêiner */
+  height: auto; /* Mantém a proporção da imagem */
+  margin-bottom: 10px; /* Espaçamento entre as imagens */
+}
 }
