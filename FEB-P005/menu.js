@@ -1,30 +1,16 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const menuList = document.querySelector('.menu-list');
-    const menuIcon = document.querySelector('.menu-icon');
-  
-    let isMenuOpen = false;
-  
-    menuIcon.addEventListener('click', function () {
-      isMenuOpen = !isMenuOpen;
-      if (isMenuOpen) {
-        menuList.style.display = 'block';
-      } else {
-        menuList.style.display = 'none';
-      }
-    });
-  
-    document.addEventListener('click', function (event) {
-      if (!menuIcon.contains(event.target) && !menuList.contains(event.target)) {
-        menuList.style.display = 'none';
-        isMenuOpen = false;
-      }
-    });
-  
-    // Abrir o menu em telas menores
-    const screenWidth = window.innerWidth;
-    if (screenWidth <= 500) {
-      menuList.style.display = 'none'; // Oculta o menu inicialmente em telas menores
-      menuList.style.display = 'block'; // Mostra o menu ao clicar no ícone do menu
-    }
-  });
-  
+
+let btnMenu = document.getElementById('btn-menu')
+let menu = document.getElementById('menu-mobile')
+let overlay = document.getElementById('overlay-menu')
+
+btnMenu.addEventListener('click', ()=>{
+    menu.classList.add('abrir-menu')
+})
+
+menu.addEventListener('click', ()=>{
+    menu.classList.remove('abrir-menu')
+})
+
+overlay.addEventListener('click', ()=>{
+    menu.classList.remove('abrir-menu')
+})
