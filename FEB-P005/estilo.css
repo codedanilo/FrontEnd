@@ -151,14 +151,16 @@ font-size: 2em;
   }
 
   .header-with-background {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     background-image: url('img/uesc_mobile.png');
     background-size: cover;
     background-position:center;
+    max-width: 100%;
+    align-items: center;
     color: #fff; /* Cor do texto para melhor legibilidade na imagem de fundo */
-    padding: 60px 0; /* Ajuste o preenchimento superior e inferior conforme necessário */
-    height: 60px;
-    width: 395px;
+    height: auto;
+    
   }
   /* Estilos específicos para a box-vertical */
 .box-vertical {
@@ -179,5 +181,12 @@ font-size: 2em;
   max-width: 100%; /* Garante que a largura da imagem não exceda a largura do contêiner */
   height: auto; /* Mantém a proporção da imagem */
   margin-bottom: 10px; /* Espaçamento entre as imagens */
+}
+
+header nav.menu-mobile ul li {
+  color: #5c5c5c;
+  text-decoration: none;
+  display: inline-block;
+  transition: .2s;
 }
 }

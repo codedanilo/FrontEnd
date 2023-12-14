@@ -55,6 +55,17 @@
 .menu-mobile nav ul li a:hover{
   background-color: #eafa04;
   color: #2c2c2b;
+  display: block;
+}
+
+.menu-mobile nav ul li a{
+  text-decoration: none;
+  display: block;
+  
+}
+
+.menu-mobile ul {
+  list-style-type: none;
 }
 
 .overlay-menu{
